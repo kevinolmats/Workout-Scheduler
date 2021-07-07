@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AEA6F91269670B8005B87E1 /* Workout_SchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F90269670B8005B87E1 /* Workout_SchedulerApp.swift */; };
+		0AEA6F91269670B8005B87E1 /* WorkoutSchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */; };
 		0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F92269670B8005B87E1 /* ContentView.swift */; };
 		0AEA6F95269670BA005B87E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F94269670BA005B87E1 /* Assets.xcassets */; };
 		0AEA6F98269670BA005B87E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F97269670BA005B87E1 /* Preview Assets.xcassets */; };
 		0AEA6FA2269670BA005B87E1 /* Workout_SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FA1269670BA005B87E1 /* Workout_SchedulerTests.swift */; };
 		0AEA6FAC269670BA005B87E1 /* Workout_SchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */; };
+		0AEA6FBD26967124005B87E1 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FBC26967124005B87E1 /* TimeInterval.swift */; };
+		0AEA6FBF26967137005B87E1 /* BlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FBE26967137005B87E1 /* BlockType.swift */; };
+		0AEA6FC126967149005B87E1 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC026967149005B87E1 /* Block.swift */; };
+		0AEA6FC32696715D005B87E1 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC22696715D005B87E1 /* SessionType.swift */; };
+		0AEA6FC526967182005B87E1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC426967182005B87E1 /* Session.swift */; };
+		0AEA6FC72696719F005B87E1 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC62696719F005B87E1 /* Schedule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0AEA6F8D269670B8005B87E1 /* Workout Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AEA6F90269670B8005B87E1 /* Workout_SchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_SchedulerApp.swift; sourceTree = "<group>"; };
+		0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSchedulerApp.swift; sourceTree = "<group>"; };
 		0AEA6F92269670B8005B87E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AEA6F94269670BA005B87E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AEA6F97269670BA005B87E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -42,6 +48,12 @@
 		0AEA6FA1269670BA005B87E1 /* Workout_SchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_SchedulerTests.swift; sourceTree = "<group>"; };
 		0AEA6FA7269670BA005B87E1 /* Workout SchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout SchedulerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_SchedulerUITests.swift; sourceTree = "<group>"; };
+		0AEA6FBC26967124005B87E1 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
+		0AEA6FBE26967137005B87E1 /* BlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockType.swift; sourceTree = "<group>"; };
+		0AEA6FC026967149005B87E1 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		0AEA6FC22696715D005B87E1 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		0AEA6FC426967182005B87E1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0AEA6FC62696719F005B87E1 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +104,10 @@
 		0AEA6F8F269670B8005B87E1 /* Workout Scheduler */ = {
 			isa = PBXGroup;
 			children = (
-				0AEA6F90269670B8005B87E1 /* Workout_SchedulerApp.swift */,
-				0AEA6F92269670B8005B87E1 /* ContentView.swift */,
-				0AEA6F94269670BA005B87E1 /* Assets.xcassets */,
+				0AEA6FB8269670DB005B87E1 /* Models */,
+				0AEA6FBB26967108005B87E1 /* Extensions */,
+				0AEA6FB9269670E5005B87E1 /* Views */,
+				0AEA6FBA269670EF005B87E1 /* Support Files */,
 				0AEA6F96269670BA005B87E1 /* Preview Content */,
 			);
 			path = "Workout Scheduler";
@@ -122,6 +135,43 @@
 				0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */,
 			);
 			path = "Workout SchedulerUITests";
+			sourceTree = "<group>";
+		};
+		0AEA6FB8269670DB005B87E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA6FBE26967137005B87E1 /* BlockType.swift */,
+				0AEA6FC026967149005B87E1 /* Block.swift */,
+				0AEA6FC22696715D005B87E1 /* SessionType.swift */,
+				0AEA6FC426967182005B87E1 /* Session.swift */,
+				0AEA6FC62696719F005B87E1 /* Schedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0AEA6FB9269670E5005B87E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */,
+				0AEA6F92269670B8005B87E1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0AEA6FBA269670EF005B87E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA6F94269670BA005B87E1 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		0AEA6FBB26967108005B87E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA6FBC26967124005B87E1 /* TimeInterval.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,8 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEA6FC526967182005B87E1 /* Session.swift in Sources */,
 				0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */,
-				0AEA6F91269670B8005B87E1 /* Workout_SchedulerApp.swift in Sources */,
+				0AEA6FBD26967124005B87E1 /* TimeInterval.swift in Sources */,
+				0AEA6FC126967149005B87E1 /* Block.swift in Sources */,
+				0AEA6F91269670B8005B87E1 /* WorkoutSchedulerApp.swift in Sources */,
+				0AEA6FC32696715D005B87E1 /* SessionType.swift in Sources */,
+				0AEA6FC72696719F005B87E1 /* Schedule.swift in Sources */,
+				0AEA6FBF26967137005B87E1 /* BlockType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,13 +479,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-Scheduler";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinolmats.WorkoutScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -453,13 +509,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-Scheduler";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinolmats.WorkoutScheduler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

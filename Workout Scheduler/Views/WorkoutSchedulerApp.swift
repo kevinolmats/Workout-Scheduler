@@ -1,5 +1,5 @@
 //
-//  Workout_SchedulerApp.swift
+//  WorkoutSchedulerApp.swift
 //  Workout Scheduler
 //
 //  Created by Kevin Olmats on 2021-07-07.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Workout_SchedulerApp: App {
+struct WorkoutSchedulerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
