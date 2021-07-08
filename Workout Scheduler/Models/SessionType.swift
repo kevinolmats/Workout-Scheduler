@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum SessionType: String, CaseIterable, Codable {
     case push, pull, legs, cardio
@@ -23,6 +24,19 @@ enum SessionType: String, CaseIterable, Codable {
         case .pull: return Block(title: "Pull", type: .strength)
         case .legs: return Block(title: "Legs", type: .strength)
         case .cardio: return nil
+        }
+    }
+    
+    var tint: Color {
+        switch self {
+        case .push:
+            return .mint
+        case .pull:
+            return .green
+        case .legs:
+            return .indigo
+        case .cardio:
+            return .orange
         }
     }
 }

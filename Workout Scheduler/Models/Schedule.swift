@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import MapKit
 
 final class Schedule: Codable, RawRepresentable, Identifiable, Equatable, ObservableObject {
     init(id: UUID = UUID(), startDate: Date = Date.now, sessions: [Session] = []) {
@@ -49,6 +50,12 @@ final class Schedule: Codable, RawRepresentable, Identifiable, Equatable, Observ
             default:
                 session.populateBlocks(strength: session.type.block, ignoring: session.type == .cardio ? [] : allBlocks)
             }
+        }
+    }
+    
+    func scheduleEvents(with mapItem: MKMapItem? = nil) {
+        for session in sessions {
+            session.scheduleEvent(with: mapItem)
         }
     }
     

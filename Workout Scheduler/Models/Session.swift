@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import EventKit
+import MapKit
+import SwiftUI
 
 final class Session: CustomDebugStringConvertible, Codable, Equatable, ObservableObject, Identifiable {
     static func == (lhs: Session, rhs: Session) -> Bool {
@@ -25,28 +28,30 @@ final class Session: CustomDebugStringConvertible, Codable, Equatable, Observabl
     }
     
     let id: UUID
-    var startDate: Date = Date.now
-    var duration: TimeInterval = 3000
-    var type: SessionType
-    var blocks: [Block] = []
+    @Published var startDate: Date = Date.now
+    @Published var duration: TimeInterval = 3000
+    @Published var type: SessionType
+    @Published var blocks: [Block] = []
     
-//    private enum CodingKeys: String, CodingKey { case startDate, duration, type, blocks }
-//
-//    func encode(to encoder: Encoder) throws {
-//        var container = encoder.container(keyedBy: CodingKeys.self)
-//        try container.encode(startDate, forKey: .startDate)
-//        try container.encode(duration, forKey: .duration)
-//        try container.encode(type, forKey: .type)
-//        try container.encode(blocks, forKey: .blocks)
-//    }
-//
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        startDate = try values.decode(Date.self, forKey: .startDate)
-//        duration = try values.decode(TimeInterval.self, forKey: .duration)
-//        type = try values.decode(SessionType.self, forKey: .type)
-//        blocks = try values.decode([Block].self, forKey: .blocks)
-//    }
+    private enum CodingKeys: String, CodingKey { case id, startDate, duration, type, blocks }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(startDate, forKey: .startDate)
+        try container.encode(duration, forKey: .duration)
+        try container.encode(type, forKey: .type)
+        try container.encode(blocks, forKey: .blocks)
+    }
+
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(UUID.self, forKey: .id)
+        startDate = try values.decode(Date.self, forKey: .startDate)
+        duration = try values.decode(TimeInterval.self, forKey: .duration)
+        type = try values.decode(SessionType.self, forKey: .type)
+        blocks = try values.decode([Block].self, forKey: .blocks)
+    }
     
     var debugDescription: String {
         var str = "Session: \(type), \(startDate), \(duration / 60) min(s), \(blocks.count) block(s)\n"
@@ -110,5 +115,25 @@ final class Session: CustomDebugStringConvertible, Codable, Equatable, Observabl
         
         self.duration = self.duration - timeRemaining
         
+    }
+    
+    func scheduleEvent(with mapItem: MKMapItem? = nil)  {
+        @AppStorage("minutesToArriveEarly") var arriveEarly: Int = 10
+        @AppStorage("bookingLegnth") var bookingLegnth: Int = 60
+        
+        let store = EKEventStore()
+        let event = EKEvent(eventStore: store)
+        let startDate = Calendar.current.date(byAdding: .minute, value: -arriveEarly, to: self.startDate) ?? self.startDate
+        event.startDate = startDate
+        event.endDate = Calendar.current.date(byAdding: .minute, value: bookingLegnth, to: self.startDate)
+        event.title = "Workout: \(type.rawValue.capitalized)"
+        
+        if let mapItem = mapItem {
+            let location = EKStructuredLocation(mapItem: mapItem)
+            event.structuredLocation = location
+        }
+        
+        event.calendar = store.defaultCalendarForNewEvents
+        try? store.save(event, span: EKSpan.thisEvent, commit: true)
     }
 }

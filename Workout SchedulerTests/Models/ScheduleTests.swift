@@ -6,7 +6,8 @@
 //
 
 import XCTest
-@testable import Workout_Scheduler
+import MapKit
+@testable import WorkoutScheduler
 
 class ScheduleTests: XCTestCase {
 
@@ -67,6 +68,19 @@ class ScheduleTests: XCTestCase {
         XCTAssertEqual(schedule.id, decoded?.id, "Unexpected decoded value: \(String(describing: decoded?.id))")
         XCTAssertEqual(schedule.startDate, decoded?.startDate, "Unexpected decoded value: \(String(describing: decoded?.startDate))")
         XCTAssertEqual(schedule.sessions, decoded?.sessions, "Unexpected decoded value: \(String(describing: decoded?.sessions))")
+    }
+
+    func testGetPlacemark() async throws {
+        let coordinates = CLLocationCoordinate2D(latitude: CLLocationDegrees(51.15686259), longitude: CLLocationDegrees(-114.23151813))
+        let request = MKLocalSearch.Request()
+        request.naturalLanguageQuery = "Shane Homes YMCA"
+        request.region = MKCoordinateRegion(center: coordinates, latitudinalMeters: 50, longitudinalMeters: 50)
+        
+        let search = MKLocalSearch(request: request)
+        let response = try await search.start()
+        let location = try XCTUnwrap(response.mapItems.first)
+        
+        XCTAssertEqual(location.name, "Shane Homes YMCA at Rocky Ridge")
     }
 
 }

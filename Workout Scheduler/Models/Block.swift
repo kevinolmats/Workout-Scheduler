@@ -7,8 +7,9 @@
 
 import Foundation
 
-class Block: CustomDebugStringConvertible, Equatable, Codable {
-    init(title: String, type: BlockType, duration: TimeInterval = 0, possibleDurations: [TimeInterval] = [], url: URL? = nil) {
+class Block: CustomDebugStringConvertible, Equatable, Codable, Identifiable {
+    init(id: UUID = UUID(), title: String, type: BlockType, duration: TimeInterval = 0, possibleDurations: [TimeInterval] = [], url: String = "") {
+        self.id = id
         self.title = title
         self.type = type
         self.duration = duration
@@ -17,12 +18,14 @@ class Block: CustomDebugStringConvertible, Equatable, Codable {
     }
     
     static func == (lhs: Block, rhs: Block) -> Bool {
-        lhs.title == rhs.title
+        lhs.id == rhs.id
+        && lhs.title == rhs.title
         && lhs.type == rhs.type
         && lhs.duration == rhs.duration
         && lhs.url == rhs.url
     }
     
+    let id: UUID
     var title: String
     let type: BlockType
     
@@ -32,8 +35,8 @@ class Block: CustomDebugStringConvertible, Equatable, Codable {
     }
     var possibleDurations: [TimeInterval]
     
-    var url: URL? = nil
+    var url: String = ""
     var debugDescription: String {
-        return "\(title) (\(minutes) min(s)) | \(type.rawValue) | \(url?.absoluteString ?? "No URL")"
+        return "\(title) (\(minutes) min(s)) | \(type.rawValue) | \(url.isEmpty ? "No URL" : url)"
     }
 }

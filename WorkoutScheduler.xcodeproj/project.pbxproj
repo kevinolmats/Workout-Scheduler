@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD50DF826979C36009BED6E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD50DF726979C36009BED6E /* SettingsView.swift */; };
 		0AEA6F91269670B8005B87E1 /* WorkoutSchedulerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */; };
 		0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F92269670B8005B87E1 /* ContentView.swift */; };
 		0AEA6F95269670BA005B87E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F94269670BA005B87E1 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		0AEA6FD1269692BB005B87E1 /* SessionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */; };
 		0AEA6FD326969D30005B87E1 /* Date+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD226969D30005B87E1 /* Date+RawRepresentable.swift */; };
 		0AEA6FD526969EF4005B87E1 /* SessionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD426969EF4005B87E1 /* SessionList.swift */; };
+		0AEA6FD72696B1B0005B87E1 /* SessionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD62696B1B0005B87E1 /* SessionDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AEA6F8D269670B8005B87E1 /* Workout Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD50DF726979C36009BED6E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0AEA6F8D269670B8005B87E1 /* WorkoutScheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutScheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSchedulerApp.swift; sourceTree = "<group>"; };
 		0AEA6F92269670B8005B87E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AEA6F94269670BA005B87E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AEA6F97269670BA005B87E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout SchedulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AEA6F9D269670BA005B87E1 /* WorkoutSchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutSchedulerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEA6FBC26967124005B87E1 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		0AEA6FBE26967137005B87E1 /* BlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockType.swift; sourceTree = "<group>"; };
 		0AEA6FC026967149005B87E1 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 		0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionScheduler.swift; sourceTree = "<group>"; };
 		0AEA6FD226969D30005B87E1 /* Date+RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RawRepresentable.swift"; sourceTree = "<group>"; };
 		0AEA6FD426969EF4005B87E1 /* SessionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionList.swift; sourceTree = "<group>"; };
+		0AEA6FD62696B1B0005B87E1 /* SessionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetail.swift; sourceTree = "<group>"; };
+		0AEA6FD82696C2F9005B87E1 /* WorkoutScheduler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "WorkoutScheduler-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		0AEA6F84269670B8005B87E1 = {
 			isa = PBXGroup;
 			children = (
+				0AEA6FD82696C2F9005B87E1 /* WorkoutScheduler-Info.plist */,
 				0AEA6F8F269670B8005B87E1 /* Workout Scheduler */,
 				0AEA6FA0269670BA005B87E1 /* Workout SchedulerTests */,
 				0AEA6F8E269670B8005B87E1 /* Products */,
@@ -84,8 +90,8 @@
 		0AEA6F8E269670B8005B87E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AEA6F8D269670B8005B87E1 /* Workout Scheduler.app */,
-				0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */,
+				0AEA6F8D269670B8005B87E1 /* WorkoutScheduler.app */,
+				0AEA6F9D269670BA005B87E1 /* WorkoutSchedulerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			children = (
 				0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */,
 				0AEA6F92269670B8005B87E1 /* ContentView.swift */,
+				0AD50DF726979C36009BED6E /* SettingsView.swift */,
 				0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */,
 				0AEA6FD426969EF4005B87E1 /* SessionList.swift */,
+				0AEA6FD62696B1B0005B87E1 /* SessionDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AEA6F8C269670B8005B87E1 /* Workout Scheduler */ = {
+		0AEA6F8C269670B8005B87E1 /* WorkoutScheduler */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AEA6FAF269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout Scheduler" */;
+			buildConfigurationList = 0AEA6FAF269670BA005B87E1 /* Build configuration list for PBXNativeTarget "WorkoutScheduler" */;
 			buildPhases = (
 				0AEA6F89269670B8005B87E1 /* Sources */,
 				0AEA6F8A269670B8005B87E1 /* Frameworks */,
@@ -182,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = "Workout Scheduler";
+			name = WorkoutScheduler;
 			productName = "Workout Scheduler";
-			productReference = 0AEA6F8D269670B8005B87E1 /* Workout Scheduler.app */;
+			productReference = 0AEA6F8D269670B8005B87E1 /* WorkoutScheduler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0AEA6F9C269670BA005B87E1 /* Workout SchedulerTests */ = {
+		0AEA6F9C269670BA005B87E1 /* WorkoutSchedulerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AEA6FB2269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout SchedulerTests" */;
+			buildConfigurationList = 0AEA6FB2269670BA005B87E1 /* Build configuration list for PBXNativeTarget "WorkoutSchedulerTests" */;
 			buildPhases = (
 				0AEA6F99269670BA005B87E1 /* Sources */,
 				0AEA6F9A269670BA005B87E1 /* Frameworks */,
@@ -200,9 +208,9 @@
 			dependencies = (
 				0AEA6F9F269670BA005B87E1 /* PBXTargetDependency */,
 			);
-			name = "Workout SchedulerTests";
+			name = WorkoutSchedulerTests;
 			productName = "Workout SchedulerTests";
-			productReference = 0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */;
+			productReference = 0AEA6F9D269670BA005B87E1 /* WorkoutSchedulerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -225,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AEA6F88269670B8005B87E1 /* Build configuration list for PBXProject "Workout Scheduler" */;
+			buildConfigurationList = 0AEA6F88269670B8005B87E1 /* Build configuration list for PBXProject "WorkoutScheduler" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,8 +246,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AEA6F8C269670B8005B87E1 /* Workout Scheduler */,
-				0AEA6F9C269670BA005B87E1 /* Workout SchedulerTests */,
+				0AEA6F8C269670B8005B87E1 /* WorkoutScheduler */,
+				0AEA6F9C269670BA005B87E1 /* WorkoutSchedulerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,6 +279,8 @@
 				0AEA6FC526967182005B87E1 /* Session.swift in Sources */,
 				0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */,
 				0AEA6FBD26967124005B87E1 /* TimeInterval.swift in Sources */,
+				0AEA6FD72696B1B0005B87E1 /* SessionDetail.swift in Sources */,
+				0AD50DF826979C36009BED6E /* SettingsView.swift in Sources */,
 				0AEA6FD326969D30005B87E1 /* Date+RawRepresentable.swift in Sources */,
 				0AEA6FC126967149005B87E1 /* Block.swift in Sources */,
 				0AEA6F91269670B8005B87E1 /* WorkoutSchedulerApp.swift in Sources */,
@@ -296,7 +306,7 @@
 /* Begin PBXTargetDependency section */
 		0AEA6F9F269670BA005B87E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AEA6F8C269670B8005B87E1 /* Workout Scheduler */;
+			target = 0AEA6F8C269670B8005B87E1 /* WorkoutScheduler */;
 			targetProxy = 0AEA6F9E269670BA005B87E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -429,6 +439,10 @@
 				DEVELOPMENT_TEAM = B749478FAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WorkoutScheduler-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = WorkoutScheduler;
+				INFOPLIST_KEY_CFBundleName = WorkoutScheduler;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +473,10 @@
 				DEVELOPMENT_TEAM = B749478FAN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WorkoutScheduler-Info.plist";
+				INFOPLIST_KEY_CFBundleExecutable = WorkoutScheduler;
+				INFOPLIST_KEY_CFBundleName = WorkoutScheduler;
+				INFOPLIST_KEY_CFBundleVersion = 1;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -503,7 +521,7 @@
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Scheduler.app/Workout Scheduler";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutScheduler.app/WorkoutScheduler";
 			};
 			name = Debug;
 		};
@@ -531,14 +549,14 @@
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Scheduler.app/Workout Scheduler";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WorkoutScheduler.app/WorkoutScheduler";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AEA6F88269670B8005B87E1 /* Build configuration list for PBXProject "Workout Scheduler" */ = {
+		0AEA6F88269670B8005B87E1 /* Build configuration list for PBXProject "WorkoutScheduler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AEA6FAD269670BA005B87E1 /* Debug */,
@@ -547,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AEA6FAF269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout Scheduler" */ = {
+		0AEA6FAF269670BA005B87E1 /* Build configuration list for PBXNativeTarget "WorkoutScheduler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AEA6FB0269670BA005B87E1 /* Debug */,
@@ -556,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AEA6FB2269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout SchedulerTests" */ = {
+		0AEA6FB2269670BA005B87E1 /* Build configuration list for PBXNativeTarget "WorkoutSchedulerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AEA6FB3269670BA005B87E1 /* Debug */,
