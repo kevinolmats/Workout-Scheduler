@@ -11,25 +11,21 @@
 		0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6F92269670B8005B87E1 /* ContentView.swift */; };
 		0AEA6F95269670BA005B87E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F94269670BA005B87E1 /* Assets.xcassets */; };
 		0AEA6F98269670BA005B87E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AEA6F97269670BA005B87E1 /* Preview Assets.xcassets */; };
-		0AEA6FA2269670BA005B87E1 /* Workout_SchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FA1269670BA005B87E1 /* Workout_SchedulerTests.swift */; };
-		0AEA6FAC269670BA005B87E1 /* Workout_SchedulerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */; };
 		0AEA6FBD26967124005B87E1 /* TimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FBC26967124005B87E1 /* TimeInterval.swift */; };
 		0AEA6FBF26967137005B87E1 /* BlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FBE26967137005B87E1 /* BlockType.swift */; };
 		0AEA6FC126967149005B87E1 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC026967149005B87E1 /* Block.swift */; };
 		0AEA6FC32696715D005B87E1 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC22696715D005B87E1 /* SessionType.swift */; };
 		0AEA6FC526967182005B87E1 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC426967182005B87E1 /* Session.swift */; };
 		0AEA6FC72696719F005B87E1 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FC62696719F005B87E1 /* Schedule.swift */; };
+		0AEA6FCD269673C5005B87E1 /* ScheduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FCC269673C5005B87E1 /* ScheduleTests.swift */; };
+		0AEA6FCF2696823A005B87E1 /* Array+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FCE2696823A005B87E1 /* Array+RawRepresentable.swift */; };
+		0AEA6FD1269692BB005B87E1 /* SessionScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */; };
+		0AEA6FD326969D30005B87E1 /* Date+RawRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD226969D30005B87E1 /* Date+RawRepresentable.swift */; };
+		0AEA6FD526969EF4005B87E1 /* SessionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA6FD426969EF4005B87E1 /* SessionList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0AEA6F9E269670BA005B87E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0AEA6F85269670B8005B87E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0AEA6F8C269670B8005B87E1;
-			remoteInfo = "Workout Scheduler";
-		};
-		0AEA6FA8269670BA005B87E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0AEA6F85269670B8005B87E1 /* Project object */;
 			proxyType = 1;
@@ -45,15 +41,17 @@
 		0AEA6F94269670BA005B87E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AEA6F97269670BA005B87E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout SchedulerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AEA6FA1269670BA005B87E1 /* Workout_SchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_SchedulerTests.swift; sourceTree = "<group>"; };
-		0AEA6FA7269670BA005B87E1 /* Workout SchedulerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Workout SchedulerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout_SchedulerUITests.swift; sourceTree = "<group>"; };
 		0AEA6FBC26967124005B87E1 /* TimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeInterval.swift; sourceTree = "<group>"; };
 		0AEA6FBE26967137005B87E1 /* BlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockType.swift; sourceTree = "<group>"; };
 		0AEA6FC026967149005B87E1 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		0AEA6FC22696715D005B87E1 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 		0AEA6FC426967182005B87E1 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0AEA6FC62696719F005B87E1 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		0AEA6FCC269673C5005B87E1 /* ScheduleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTests.swift; sourceTree = "<group>"; };
+		0AEA6FCE2696823A005B87E1 /* Array+RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+RawRepresentable.swift"; sourceTree = "<group>"; };
+		0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionScheduler.swift; sourceTree = "<group>"; };
+		0AEA6FD226969D30005B87E1 /* Date+RawRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+RawRepresentable.swift"; sourceTree = "<group>"; };
+		0AEA6FD426969EF4005B87E1 /* SessionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AEA6FA4269670BA005B87E1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +77,6 @@
 			children = (
 				0AEA6F8F269670B8005B87E1 /* Workout Scheduler */,
 				0AEA6FA0269670BA005B87E1 /* Workout SchedulerTests */,
-				0AEA6FAA269670BA005B87E1 /* Workout SchedulerUITests */,
 				0AEA6F8E269670B8005B87E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +86,6 @@
 			children = (
 				0AEA6F8D269670B8005B87E1 /* Workout Scheduler.app */,
 				0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */,
-				0AEA6FA7269670BA005B87E1 /* Workout SchedulerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,17 +113,9 @@
 		0AEA6FA0269670BA005B87E1 /* Workout SchedulerTests */ = {
 			isa = PBXGroup;
 			children = (
-				0AEA6FA1269670BA005B87E1 /* Workout_SchedulerTests.swift */,
+				0AEA6FC826967397005B87E1 /* Models */,
 			);
 			path = "Workout SchedulerTests";
-			sourceTree = "<group>";
-		};
-		0AEA6FAA269670BA005B87E1 /* Workout SchedulerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0AEA6FAB269670BA005B87E1 /* Workout_SchedulerUITests.swift */,
-			);
-			path = "Workout SchedulerUITests";
 			sourceTree = "<group>";
 		};
 		0AEA6FB8269670DB005B87E1 /* Models */ = {
@@ -154,6 +135,8 @@
 			children = (
 				0AEA6F90269670B8005B87E1 /* WorkoutSchedulerApp.swift */,
 				0AEA6F92269670B8005B87E1 /* ContentView.swift */,
+				0AEA6FD0269692BB005B87E1 /* SessionScheduler.swift */,
+				0AEA6FD426969EF4005B87E1 /* SessionList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,8 +153,18 @@
 			isa = PBXGroup;
 			children = (
 				0AEA6FBC26967124005B87E1 /* TimeInterval.swift */,
+				0AEA6FCE2696823A005B87E1 /* Array+RawRepresentable.swift */,
+				0AEA6FD226969D30005B87E1 /* Date+RawRepresentable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0AEA6FC826967397005B87E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA6FCC269673C5005B87E1 /* ScheduleTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,24 +205,6 @@
 			productReference = 0AEA6F9D269670BA005B87E1 /* Workout SchedulerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0AEA6FA6269670BA005B87E1 /* Workout SchedulerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0AEA6FB5269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout SchedulerUITests" */;
-			buildPhases = (
-				0AEA6FA3269670BA005B87E1 /* Sources */,
-				0AEA6FA4269670BA005B87E1 /* Frameworks */,
-				0AEA6FA5269670BA005B87E1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0AEA6FA9269670BA005B87E1 /* PBXTargetDependency */,
-			);
-			name = "Workout SchedulerUITests";
-			productName = "Workout SchedulerUITests";
-			productReference = 0AEA6FA7269670BA005B87E1 /* Workout SchedulerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,10 +220,7 @@
 					};
 					0AEA6F9C269670BA005B87E1 = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 0AEA6F8C269670B8005B87E1;
-					};
-					0AEA6FA6269670BA005B87E1 = {
-						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 0AEA6F8C269670B8005B87E1;
 					};
 				};
@@ -268,7 +240,6 @@
 			targets = (
 				0AEA6F8C269670B8005B87E1 /* Workout Scheduler */,
 				0AEA6F9C269670BA005B87E1 /* Workout SchedulerTests */,
-				0AEA6FA6269670BA005B87E1 /* Workout SchedulerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,13 +261,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0AEA6FA5269670BA005B87E1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -307,11 +271,15 @@
 				0AEA6FC526967182005B87E1 /* Session.swift in Sources */,
 				0AEA6F93269670B8005B87E1 /* ContentView.swift in Sources */,
 				0AEA6FBD26967124005B87E1 /* TimeInterval.swift in Sources */,
+				0AEA6FD326969D30005B87E1 /* Date+RawRepresentable.swift in Sources */,
 				0AEA6FC126967149005B87E1 /* Block.swift in Sources */,
 				0AEA6F91269670B8005B87E1 /* WorkoutSchedulerApp.swift in Sources */,
 				0AEA6FC32696715D005B87E1 /* SessionType.swift in Sources */,
+				0AEA6FD1269692BB005B87E1 /* SessionScheduler.swift in Sources */,
+				0AEA6FD526969EF4005B87E1 /* SessionList.swift in Sources */,
 				0AEA6FC72696719F005B87E1 /* Schedule.swift in Sources */,
 				0AEA6FBF26967137005B87E1 /* BlockType.swift in Sources */,
+				0AEA6FCF2696823A005B87E1 /* Array+RawRepresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,15 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AEA6FA2269670BA005B87E1 /* Workout_SchedulerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0AEA6FA3269670BA005B87E1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AEA6FAC269670BA005B87E1 /* Workout_SchedulerUITests.swift in Sources */,
+				0AEA6FCD269673C5005B87E1 /* ScheduleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +298,6 @@
 			isa = PBXTargetDependency;
 			target = 0AEA6F8C269670B8005B87E1 /* Workout Scheduler */;
 			targetProxy = 0AEA6F9E269670BA005B87E1 /* PBXContainerItemProxy */;
-		};
-		0AEA6FA9269670BA005B87E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0AEA6F8C269670B8005B87E1 /* Workout Scheduler */;
-			targetProxy = 0AEA6FA8269670BA005B87E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,11 +483,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B749478FAN;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -542,6 +498,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-SchedulerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Scheduler.app/Workout Scheduler";
@@ -553,11 +512,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B749478FAN;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,55 +527,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-SchedulerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Workout Scheduler.app/Workout Scheduler";
-			};
-			name = Release;
-		};
-		0AEA6FB6269670BA005B87E1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B749478FAN;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-SchedulerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Workout Scheduler";
-			};
-			name = Debug;
-		};
-		0AEA6FB7269670BA005B87E1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = B749478FAN;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kevinolmats.Workout-SchedulerUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Workout Scheduler";
 			};
 			name = Release;
 		};
@@ -645,15 +561,6 @@
 			buildConfigurations = (
 				0AEA6FB3269670BA005B87E1 /* Debug */,
 				0AEA6FB4269670BA005B87E1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0AEA6FB5269670BA005B87E1 /* Build configuration list for PBXNativeTarget "Workout SchedulerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0AEA6FB6269670BA005B87E1 /* Debug */,
-				0AEA6FB7269670BA005B87E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

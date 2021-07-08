@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SessionType: String, CaseIterable {
+enum SessionType: String, CaseIterable, Codable {
     case push, pull, legs, cardio
     
     var blocks: [BlockType] {

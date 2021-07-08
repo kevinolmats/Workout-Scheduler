@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Block: CustomDebugStringConvertible, Equatable {
+class Block: CustomDebugStringConvertible, Equatable, Codable {
     init(title: String, type: BlockType, duration: TimeInterval = 0, possibleDurations: [TimeInterval] = [], url: URL? = nil) {
         self.title = title
         self.type = type

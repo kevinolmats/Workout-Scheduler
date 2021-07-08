@@ -7,18 +7,46 @@
 
 import Foundation
 
-class Session: CustomDebugStringConvertible {
-    init(startDate: Date = Date.now, duration: TimeInterval = 3000, type: SessionType, blocks: [Block] = []) {
+final class Session: CustomDebugStringConvertible, Codable, Equatable, ObservableObject, Identifiable {
+    static func == (lhs: Session, rhs: Session) -> Bool {
+        lhs.id == rhs.id
+        && lhs.startDate == rhs.startDate
+        && lhs.duration == rhs.duration
+        && lhs.type == rhs.type
+        && lhs.blocks == rhs.blocks
+    }
+    
+    init(id: UUID = UUID(), startDate: Date = Date.now, duration: TimeInterval = 3000, type: SessionType, blocks: [Block] = []) {
+        self.id = id
         self.startDate = startDate
         self.duration = duration
         self.type = type
         self.blocks = blocks
     }
     
+    let id: UUID
     var startDate: Date = Date.now
     var duration: TimeInterval = 3000
     var type: SessionType
     var blocks: [Block] = []
+    
+//    private enum CodingKeys: String, CodingKey { case startDate, duration, type, blocks }
+//
+//    func encode(to encoder: Encoder) throws {
+//        var container = encoder.container(keyedBy: CodingKeys.self)
+//        try container.encode(startDate, forKey: .startDate)
+//        try container.encode(duration, forKey: .duration)
+//        try container.encode(type, forKey: .type)
+//        try container.encode(blocks, forKey: .blocks)
+//    }
+//
+//    init(from decoder: Decoder) throws {
+//        let values = try decoder.container(keyedBy: CodingKeys.self)
+//        startDate = try values.decode(Date.self, forKey: .startDate)
+//        duration = try values.decode(TimeInterval.self, forKey: .duration)
+//        type = try values.decode(SessionType.self, forKey: .type)
+//        blocks = try values.decode([Block].self, forKey: .blocks)
+//    }
     
     var debugDescription: String {
         var str = "Session: \(type), \(startDate), \(duration / 60) min(s), \(blocks.count) block(s)\n"

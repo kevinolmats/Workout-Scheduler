@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum BlockType: String {
+enum BlockType: String, Codable {
     case strength, cardio, core
     
     var blocks: [Block] {
